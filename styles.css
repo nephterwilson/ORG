@@ -38,14 +38,14 @@ footer p {
     outline: none;           /* Remove default focus outline */
 }
 
-
-
+/* Mobile First */
 .Team {
     display: flex;            /* Use flexbox to center the image */
     justify-content: center;  /* Center the image horizontally */
     align-items: center;      /* Center the image vertically */
-    height: 100px;            /* Set a fixed height for the container (adjust as needed) */
-    width: 100px;             /* Set a fixed width for the container (adjust as needed) */
+    height: 100px;            /* Set a fixed height for the container */
+    width: 100px;             /* Set a fixed width for the container */
+    margin: 0 auto;           /* Center the container itself if needed */
 }
 
 .Team img {
@@ -53,5 +53,24 @@ footer p {
     height: 100%;             /* Ensure the image fills the container proportionally */
     object-fit: cover;        /* Ensure the image covers the area without distortion */
     border-radius: 50%;       /* Make the image rounded (circle) */
-    margin-left: 260%;
+}
+
+/* For larger screens, adjust the size of the container */
+@media (min-width: 768px) {
+    .Team {
+        height: 150px;        /* Increase height on larger screens */
+        width: 150px;         /* Increase width on larger screens */
+    }
+
+    .Team img {
+        border-radius: 50%;  /* Maintain rounded shape */
+    }
+}
+
+/* For even larger screens */
+@media (min-width: 1024px) {
+    .Team {
+        height: 200px;        /* Increase height on larger screens */
+        width: 200px;         /* Increase width on larger screens */
+    }
 }
