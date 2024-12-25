@@ -2,6 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #faf9f6;
 }
 
 header, footer {
@@ -43,8 +44,8 @@ footer p {
     display: flex;            /* Use flexbox to center the image */
     justify-content: center;  /* Center the image horizontally */
     align-items: center;      /* Center the image vertically */
-    height: 150px;            /* Set a fixed height for the container (adjust as needed) */
-    width: 150px;             /* Set a fixed width for the container (adjust as needed) */
+    height: 100px;            /* Set a fixed height for the container (adjust as needed) */
+    width: 100px;             /* Set a fixed width for the container (adjust as needed) */
 }
 
 .Team img {
@@ -52,4 +53,5 @@ footer p {
     height: 100%;             /* Ensure the image fills the container proportionally */
     object-fit: cover;        /* Ensure the image covers the area without distortion */
     border-radius: 50%;       /* Make the image rounded (circle) */
+    margin-left: 260%;
 }
