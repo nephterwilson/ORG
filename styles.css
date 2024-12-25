@@ -13,9 +13,43 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer p {
     font-size: 14px;
+}
+
+  /* Style for the hamburger icon */
+  .navbar-toggler-icon {
+    background-color: white;  /* Set the icon color to white */
+    border-color: white;      /* Ensure the border is white */
+}
+
+/* On hover, change the icon background to a lighter shade */
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #d1d1d1;  /* Lighter shade when hovered */
+}
+
+/* Optionally, you can add a focus effect for accessibility */
+.navbar-toggler:focus .navbar-toggler-icon {
+    background-color: #bbb;  /* Slightly darker shade when focused */
+    outline: none;           /* Remove default focus outline */
+}
+
+
+
+.Team {
+    display: flex;            /* Use flexbox to center the image */
+    justify-content: center;  /* Center the image horizontally */
+    align-items: center;      /* Center the image vertically */
+    height: 150px;            /* Set a fixed height for the container (adjust as needed) */
+    width: 150px;             /* Set a fixed width for the container (adjust as needed) */
+}
+
+.Team img {
+    width: 100%;              /* Make the image fill the container */
+    height: 100%;             /* Ensure the image fills the container proportionally */
+    object-fit: cover;        /* Ensure the image covers the area without distortion */
+    border-radius: 50%;       /* Make the image rounded (circle) */
 }
